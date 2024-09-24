@@ -26,11 +26,8 @@ const Product = async () => {
   const [products, brands] = await Promise.all([getProducts(), getBrands()]);
 
   return (
-    <div>
-      <div className="div mb-2">
-        <AddProduct brands={brands} />
-      </div>
-      <table className="table w-full">
+    <div className="flex flex-col">
+      <table className="table w-full rounded-none text-gray-800 bg-gray-500">
         <thead>
           <tr className="text-white bg-gray-800 uppercase">
             <th>Id</th>
@@ -55,6 +52,9 @@ const Product = async () => {
           ))}
         </tbody>
       </table>
+      <div className="flex mt-5 justify-end">
+        <AddProduct brands={brands} />
+      </div>
     </div>
   );
 };
