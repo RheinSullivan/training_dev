@@ -9,7 +9,7 @@ const ProductLayout = ({ children }: { children: React.ReactNode }) => {
         <div className="flex">
           <figcaption>
             <h1 className="text-3xl text-[#ff0000]">Rhein Sullivan</h1>
-            <p className="text-white">Test CRUD in Nextjs</p>
+            <p className="text-white text-sm">Test Create, Read, Update, and Delete(CRUD) in Nextjs</p>
           </figcaption>
         </div>
       </figure>
