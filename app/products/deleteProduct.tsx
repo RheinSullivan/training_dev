@@ -16,7 +16,7 @@ const DeleteProduct = ({ product }: { product: Product }) => {
   const router = useRouter();
 
   const handleDelete = async (productId: number) => {
-    await axios.delete(`/api/products/${productId}`);
+    await axios.delete(`/api/product/${productId}`);
     router.refresh();
     setIsOpen(false);
   };
